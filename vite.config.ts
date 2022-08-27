@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
-import vitePluginPug from './plugins/vite-plugin-pug';
+// import vitePluginPug from './plugins/vite-plugin-pug';
+import vitePluginPugStatic from '@macropygia/vite-plugin-pug-static'
 
 const root = 'src';
 const pageRoot= "src/pages";
@@ -29,6 +30,10 @@ export default defineConfig({
     host: '0.0.0.0'
   },
   plugins: [
-    vitePluginPug(),
+    vitePluginPugStatic({
+      buildOptions: { basedir: "./src/pages" },
+      serveOptions: { basedir: "./src/pages" },
+    }),
+    // vitePluginPug(),
   ],
 });
