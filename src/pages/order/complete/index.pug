@@ -1,0 +1,96 @@
+extends ../../../layout/_baseof
+
+block load_scripts
+  script(src="../../../main.ts" type="module")
+
+block content
+  // ##### Breadcumb Area Start #####
+  div(class="breadcumb_area bg-img", style="background-image: url(/img/bg-img/breadcumb.jpg);")
+    .container.h-100
+      .row.h-100.align-items-center
+        .col-12
+          .page-title.text-center
+            h2 Order Complete
+  // ##### Breadcumb Area End #####
+  // ##### Checkout Area Start #####
+  div(class="checkout_area section-padding-80")
+    .container
+      .row
+        .col-12.col-md-6
+          div(class="checkout_details_area mt-50 clearfix")
+            .cart-page-heading.mb-30
+              h5 Billing Address
+            form(action="#", method="post")
+              .row
+                .col-md-6.mb-3
+                  label(for="first_name") First Name 
+                    span *
+                  p.form-control.no-border Ryota
+                .col-md-6.mb-3
+                  label(for="last_name") Last Name 
+                    span *
+                  p.form-control.no-border Yamada
+                .col-12.mb-3
+                  label(for="company") Company Name
+                  p#company.form-control.no-border SEM Technology
+                .col-12.mb-3
+                  label(for="country") Country 
+                    span *
+                  p.form-control.no-border Japan
+                .col-12.mb-3
+                  label(for="street_address") Address 
+                    span *
+                  p.form-control.no-border 6-23-4, Jingumae
+                  p.form-control.no-border 2F, Kuwano bldg
+                .col-12.mb-3
+                  label(for="postcode") Postcode 
+                    span *
+                  p.form-control.no-border 150-0001
+                .col-12.mb-3
+                  label(for="city") Town/City 
+                    span *
+                  p.form-control.no-border Shibuya
+                .col-12.mb-3
+                  label(for="state") Province 
+                    span *
+                  p.form-control.no-border Tokyo
+                .col-12.mb-3
+                  label(for="phone_number") Phone No 
+                    span *
+                  p.form-control.no-border 050-5867-4149
+                .col-12.mb-4
+                  label(for="email_address") Email Address 
+                    span *
+                  p.form-control.no-border yamada @ sem-technology.info
+        .col-12.col-md-6.col-lg-5.ml-lg-auto
+          .order-details-confirmation
+            .cart-page-heading
+              h5 Your Order(ID: A123456789)
+              p The Details
+            ul.order-details-form.mb-4
+              li
+                span Product
+                span Total
+              li
+                span Cocktail Yellow dress
+                span $59.90
+              li
+                span Subtotal
+                span $59.90
+              li
+                span Shipping
+                span Free
+              li
+                span Total
+                span $59.90
+            #accordion.mb-4(role="tablist")
+              .card
+                #headingThree.card-header(role="tab")
+                  h6.mb-0
+                    a.collapsed(data-toggle="collapse", href="#collapseThree", aria-expanded="false", aria-controls="collapseThree")
+                      i.fa.fa-circle-o.mr-3
+                      | credit card
+                #collapseThree.collapse(role="tabpanel", aria-labelledby="headingThree", data-parent="#accordion")
+                  .card-body
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quo sint repudiandae suscipit ab soluta delectus voluptate, vero vitae
+  // ##### Checkout Area End #####

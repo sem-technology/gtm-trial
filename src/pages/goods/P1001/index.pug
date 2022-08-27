@@ -1,0 +1,45 @@
+extends ../../../layout/_baseof
+
+block load_scripts
+  script(src="../../../main.ts" type="module")
+
+block content 
+  // ##### Single Product Details Area Start #####
+  section(class="single_product_details_area d-flex align-items-center")
+    // Single Product Thumb
+    div(class="single_product_thumb clearfix")
+      div(class="product_thumbnail_slides owl-carousel")
+        img(src="/img/product-img/product-big-1.jpg", alt="")
+        img(src="/img/product-img/product-big-2.jpg", alt="")
+        img(src="/img/product-img/product-big-3.jpg", alt="")
+    // Single Product Description
+    div(class="single_product_desc clearfix")
+      span mango
+      a(href="cart.html")
+        h2 One Shoulder Glitter Midi Dress
+      p.product-price
+        span.old-price $65.00
+        | $49.00
+      p.product-desc Mauris viverra cursus ante laoreet eleifend. Donec vel fringilla ante. Aenean finibus velit id urna vehicula, nec maximus est sollicitudin.
+      // Form
+      form.cart-form.clearfix(method="post")
+        // Select Box
+        .select-box.d-flex.mt-50.mb-30
+          select#productSize.mr-5(name="select")
+            option(value="value") Size: XL
+            option(value="value") Size: X
+            option(value="value") Size: M
+            option(value="value") Size: S
+          select#productColor(name="select")
+            option(value="value") Color: Black
+            option(value="value") Color: White
+            option(value="value") Color: Red
+            option(value="value") Color: Purple
+        // Cart & Favourite Box
+        .cart-fav-box.d-flex.align-items-center
+          // Cart
+          button.btn.essence-btn(type="submit", name="addtocart", value="5") Add to cart
+          // Favourite
+          .product-favourite.ml-4
+            a.favme.fa.fa-heart(href="#")
+  // ##### Single Product Details Area End #####

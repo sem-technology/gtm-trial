@@ -1,0 +1,69 @@
+// ##### Right Side Cart Area #####
+.cart-bg-overlay
+.right-side-cart-area
+  // Cart Button
+  .cart-button
+    a#rightSideCart(href="#")
+      img(src="/img/core-img/bag.svg", alt="")
+      span 3
+  .cart-content.d-flex
+    // Cart List Area
+    .cart-list
+      // Single Cart Item
+      .single-cart-item
+        a.product-image(href="#")
+          img.cart-thumb(src="/img/product-img/product-1.jpg", alt="")
+          // Cart Item Desc
+          .cart-item-desc
+            span.product-remove
+              i.fa.fa-close(aria-hidden="true")
+            span.badge Mango
+            h6 Button Through Strap Mini Dress
+            p.size Size: S
+            p.color Color: Red
+            p.price $45.00
+      // Single Cart Item
+      .single-cart-item
+        a.product-image(href="#")
+          img.cart-thumb(src="/img/product-img/product-2.jpg", alt="")
+          // Cart Item Desc
+          .cart-item-desc
+            span.product-remove
+              i.fa.fa-close(aria-hidden="true")
+            span.badge Mango
+            h6 Button Through Strap Mini Dress
+            p.size Size: S
+            p.color Color: Red
+            p.price $45.00
+      // Single Cart Item
+      .single-cart-item
+        a.product-image(href="#")
+          img.cart-thumb(src="/img/product-img/product-3.jpg", alt="")
+          // Cart Item Desc
+          .cart-item-desc
+            span.product-remove
+              i.fa.fa-close(aria-hidden="true")
+            span.badge Mango
+            h6 Button Through Strap Mini Dress
+            p.size Size: S
+            p.color Color: Red
+            p.price $45.00
+    // Cart Summary
+    .cart-amount-summary
+      h2 Summary
+      ul.summary-table
+        li
+          span subtotal:
+          span $274.00
+        li
+          span delivery:
+          span Free
+        li
+          span discount:
+          span -15%
+        li
+          span total:
+          span $232.00
+      .checkout-btn.mt-100
+        a.btn.essence-btn(href="/order/checkout/index.html") check out
+// ##### Right Side Cart End #####

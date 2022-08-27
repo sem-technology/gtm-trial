@@ -1,0 +1,143 @@
+extends ../../../layout/_baseof
+
+block load_scripts
+  script(src="../../../main.ts" type="module")
+
+block content
+  // ##### Breadcumb Area Start #####
+  div(class="breadcumb_area bg-img", style="background-image: url(/img/bg-img/breadcumb.jpg);")
+    .container.h-100
+      .row.h-100.align-items-center
+        .col-12
+          .page-title.text-center
+            h2 Checkout
+  // ##### Breadcumb Area End #####
+  // ##### Checkout Area Start #####
+  div(class="checkout_area section-padding-80")
+    .container
+      .row
+        .col-12.col-md-6
+          div(class="checkout_details_area mt-50 clearfix")
+            .cart-page-heading.mb-30
+              h5 Billing Address
+            form(action="#", method="post")
+              .row
+                .col-md-6.mb-3
+                  label(for="first_name") First Name 
+                    span *
+                  input.form-control(type="text", id="first_name", value="", required)
+                .col-md-6.mb-3
+                  label(for="last_name") Last Name 
+                    span *
+                  input.form-control(type="text", id="last_name", value="", required)
+                .col-12.mb-3
+                  label(for="company") Company Name
+                  input#company.form-control(type="text", value="")
+                .col-12.mb-3
+                  label(for="country") Country 
+                    span *
+                  select#country.w-100
+                    option(value="usa") United States
+                    option(value="uk") United Kingdom
+                    option(value="ger") Germany
+                    option(value="fra") France
+                    option(value="ind") India
+                    option(value="aus") Australia
+                    option(value="bra") Brazil
+                    option(value="cana") Canada
+                    option(value="jpn") Japan
+                .col-12.mb-3
+                  label(for="street_address") Address 
+                    span *
+                  input.form-control.mb-3(type="text", id="street_address", value="")
+                  input.form-control(type="text", id="street_address2", value="")
+                .col-12.mb-3
+                  label(for="postcode") Postcode 
+                    span *
+                  input#postcode.form-control(type="text", value="")
+                .col-12.mb-3
+                  label(for="city") Town/City 
+                    span *
+                  input#city.form-control(type="text", value="")
+                .col-12.mb-3
+                  label(for="state") Province 
+                    span *
+                  input#state.form-control(type="text", value="")
+                .col-12.mb-3
+                  label(for="phone_number") Phone No 
+                    span *
+                  input.form-control(type="number", id="phone_number", min="0", value="")
+                .col-12.mb-4
+                  label(for="email_address") Email Address 
+                    span *
+                  input.form-control(type="email", id="email_address", value="")
+                .col-12
+                  .custom-control.custom-checkbox.d-block.mb-2
+                    input#customCheck1.custom-control-input(type="checkbox")
+                    label.custom-control-label(for="customCheck1") Terms and conitions
+                  .custom-control.custom-checkbox.d-block.mb-2
+                    input#customCheck2.custom-control-input(type="checkbox")
+                    label.custom-control-label(for="customCheck2") Create an accout
+                  .custom-control.custom-checkbox.d-block
+                    input#customCheck3.custom-control-input(type="checkbox")
+                    label.custom-control-label(for="customCheck3") Subscribe to our newsletter
+        .col-12.col-md-6.col-lg-5.ml-lg-auto
+          .order-details-confirmation
+            .cart-page-heading
+              h5 Your Order
+              p The Details
+            ul.order-details-form.mb-4
+              li
+                span Product
+                span Total
+              li
+                span Cocktail Yellow dress
+                span $59.90
+              li
+                span Subtotal
+                span $59.90
+              li
+                span Shipping
+                span Free
+              li
+                span Total
+                span $59.90
+            #accordion.mb-4(role="tablist")
+              .card
+                #headingOne.card-header(role="tab")
+                  h6.mb-0
+                    a(data-toggle="collapse", href="#collapseOne", aria-expanded="false", aria-controls="collapseOne")
+                      i.fa.fa-circle-o.mr-3
+                      | Paypal
+                #collapseOne.collapse(role="tabpanel", aria-labelledby="headingOne", data-parent="#accordion")
+                  .card-body
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integ er bibendum sodales arcu id te mpus. Ut consectetur lacus.
+              .card
+                #headingTwo.card-header(role="tab")
+                  h6.mb-0
+                    a.collapsed(data-toggle="collapse", href="#collapseTwo", aria-expanded="false", aria-controls="collapseTwo")
+                      i.fa.fa-circle-o.mr-3
+                      | cash on delievery
+                #collapseTwo.collapse(role="tabpanel", aria-labelledby="headingTwo", data-parent="#accordion")
+                  .card-body
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quis in veritatis officia inventore, tempore provident dignissimos.
+              .card
+                #headingThree.card-header(role="tab")
+                  h6.mb-0
+                    a.collapsed(data-toggle="collapse", href="#collapseThree", aria-expanded="false", aria-controls="collapseThree")
+                      i.fa.fa-circle-o.mr-3
+                      | credit card
+                #collapseThree.collapse(role="tabpanel", aria-labelledby="headingThree", data-parent="#accordion")
+                  .card-body
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quo sint repudiandae suscipit ab soluta delectus voluptate, vero vitae
+              .card
+                #headingFour.card-header(role="tab")
+                  h6.mb-0
+                    a.collapsed(data-toggle="collapse", href="#collapseFour", aria-expanded="true", aria-controls="collapseFour")
+                      i.fa.fa-circle-o.mr-3
+                      | direct bank transfer
+                #collapseFour.collapse.show(role="tabpanel", aria-labelledby="headingThree", data-parent="#accordion")
+                  .card-body
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est cum autem eveniet saepe fugit, impedit magni.
+            a.btn.essence-btn(href="/order/complete/index.html") Place Order
+  // ##### Checkout Area End #####

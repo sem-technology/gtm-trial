@@ -1,0 +1,401 @@
+// ##### Shop Grid Area Start #####
+section(class="shop_grid_area section-padding-80")
+  .container
+    .row
+      .col-12.col-md-4.col-lg-3
+        div(class="shop_sidebar_area")
+          // ##### Single Widget #####
+          .widget.catagory.mb-50
+            // Widget Title
+            h6.widget-title.mb-30 Catagories
+            // Catagories
+            .catagories-menu
+              ul#menu-content2.menu-content.collapse.show
+                // Single Item
+                li(data-toggle="collapse", data-target="#clothing")
+                  a(href="#") clothing
+                  ul#clothing.sub-menu.collapse.show
+                    li
+                      a(href="#") All
+                    li
+                      a(href="#") Bodysuits
+                    li
+                      a(href="#") Dresses
+                    li
+                      a(href="#") Hoodies &amp;amp; Sweats
+                    li
+                      a(href="#") Jackets &amp;amp; Coats
+                    li
+                      a(href="#") Jeans
+                    li
+                      a(href="#") Pants &amp;amp; Leggings
+                    li
+                      a(href="#") Rompers &amp;amp; Jumpsuits
+                    li
+                      a(href="#") Shirts &amp;amp; Blouses
+                    li
+                      a(href="#") Shirts
+                    li
+                      a(href="#") Sweaters &amp;amp; Knits
+                // Single Item
+                li.collapsed(data-toggle="collapse", data-target="#shoes")
+                  a(href="#") shoes
+                  ul#shoes.sub-menu.collapse
+                    li
+                      a(href="#") All
+                    li
+                      a(href="#") Bodysuits
+                    li
+                      a(href="#") Dresses
+                    li
+                      a(href="#") Hoodies &amp;amp; Sweats
+                    li
+                      a(href="#") Jackets &amp;amp; Coats
+                    li
+                      a(href="#") Jeans
+                    li
+                      a(href="#") Pants &amp;amp; Leggings
+                    li
+                      a(href="#") Rompers &amp;amp; Jumpsuits
+                    li
+                      a(href="#") Shirts &amp;amp; Blouses
+                    li
+                      a(href="#") Shirts
+                    li
+                      a(href="#") Sweaters &amp;amp; Knits
+                // Single Item
+                li.collapsed(data-toggle="collapse", data-target="#accessories")
+                  a(href="#") accessories
+                  ul#accessories.sub-menu.collapse
+                    li
+                      a(href="#") All
+                    li
+                      a(href="#") Bodysuits
+                    li
+                      a(href="#") Dresses
+                    li
+                      a(href="#") Hoodies &amp;amp; Sweats
+                    li
+                      a(href="#") Jackets &amp;amp; Coats
+                    li
+                      a(href="#") Jeans
+                    li
+                      a(href="#") Pants &amp;amp; Leggings
+                    li
+                      a(href="#") Rompers &amp;amp; Jumpsuits
+                    li
+                      a(href="#") Shirts &amp;amp; Blouses
+                    li
+                      a(href="#") Shirts
+                    li
+                      a(href="#") Sweaters &amp;amp; Knits
+          // ##### Single Widget #####
+          .widget.price.mb-50
+            // Widget Title
+            h6.widget-title.mb-30 Filter by
+            // Widget Title 2
+            p.widget-title2.mb-30 Price
+            .widget-desc
+              .slider-range
+                .slider-range-price.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all(data-min="49", data-max="360", data-unit="$", data-value-min="49", data-value-max="360", data-label-result="Range:")
+                  .ui-slider-range.ui-widget-header.ui-corner-all
+                  span.ui-slider-handle.ui-state-default.ui-corner-all(tabindex="0")
+                  span.ui-slider-handle.ui-state-default.ui-corner-all(tabindex="0")
+                .range-price Range: $49.00 - $360.00
+          // ##### Single Widget #####
+          .widget.color.mb-50
+            // Widget Title 2
+            p.widget-title2.mb-30 Color
+            .widget-desc
+              ul.d-flex
+                li
+                  a.color1(href="#")
+                li
+                  a.color2(href="#")
+                li
+                  a.color3(href="#")
+                li
+                  a.color4(href="#")
+                li
+                  a.color5(href="#")
+                li
+                  a.color6(href="#")
+                li
+                  a.color7(href="#")
+                li
+                  a.color8(href="#")
+                li
+                  a.color9(href="#")
+                li
+                  a.color10(href="#")
+          // ##### Single Widget #####
+          .widget.brands.mb-50
+            // Widget Title 2
+            p.widget-title2.mb-30 Brands
+            .widget-desc
+              ul
+                li
+                  a(href="#") Asos
+                li
+                  a(href="#") Mango
+                li
+                  a(href="#") River Island
+                li
+                  a(href="#") Topshop
+                li
+                  a(href="#") Zara
+      .col-12.col-md-8.col-lg-9
+        div(class="shop_grid_product_area")
+          .row
+            .col-12
+              .product-topbar.d-flex.align-items-center.justify-content-between
+                // Total Products
+                .total-products
+                  p
+                    span 186
+                    | products found
+                // Sorting
+                .product-sorting.d-flex
+                  p Sort by:
+                  form(action="#", method="get")
+                    select#sortByselect(name="select")
+                      option(value="value") Highest Rated
+                      option(value="value") Newest
+                      option(value="value") Price: $$ - $
+                      option(value="value") Price: $ - $$
+                    input.d-none(type="submit", value="")
+          .row
+            // Single Product
+            .col-12.col-sm-6.col-lg-4
+              .single-product-wrapper
+                // Product Image
+                .product-img
+                  img(src="/img/product-img/product-1.jpg", alt="")
+                  // Hover Thumb
+                  img.hover-img(src="/img/product-img/product-2.jpg", alt="")
+                  // Product Badge
+                  .product-badge.offer-badge
+                    span -30%
+                  // Favourite
+                  .product-favourite
+                    a.favme.fa.fa-heart(href="#")
+                // Product Description
+                .product-description
+                  span topshop
+                  a(href="/goods/P1001/index.html")
+                    h6 Knot Front Mini Dress
+                  p.product-price
+                    span.old-price $75.00
+                    | $55.00
+                  // Hover Content
+                  .hover-content
+                    // Add to Cart
+                    .add-to-cart-btn
+                      a.btn.essence-btn(href="#") Add to Cart
+            // Single Product
+            .col-12.col-sm-6.col-lg-4
+              .single-product-wrapper
+                // Product Image
+                .product-img
+                  img(src="/img/product-img/product-2.jpg", alt="")
+                  // Hover Thumb
+                  img.hover-img(src="/img/product-img/product-3.jpg", alt="")
+                  // Favourite
+                  .product-favourite
+                    a.favme.fa.fa-heart(href="#")
+                // Product Description
+                .product-description
+                  span topshop
+                  a(href="/goods/P1001/index.html")
+                    h6 Knot Front Mini Dress
+                  p.product-price $80.00
+                  // Hover Content
+                  .hover-content
+                    // Add to Cart
+                    .add-to-cart-btn
+                      a.btn.essence-btn(href="#") Add to Cart
+            // Single Product
+            .col-12.col-sm-6.col-lg-4
+              .single-product-wrapper
+                // Product Image
+                .product-img
+                  img(src="/img/product-img/product-3.jpg", alt="")
+                  // Hover Thumb
+                  img.hover-img(src="/img/product-img/product-4.jpg", alt="")
+                  // Product Badge
+                  .product-badge.new-badge
+                    span New
+                  // Favourite
+                  .product-favourite
+                    a.favme.fa.fa-heart(href="#")
+                // Product Description
+                .product-description
+                  span topshop
+                  a(href="/goods/P1001/index.html")
+                    h6 Knot Front Mini Dress
+                  p.product-price $80.00
+                  // Hover Content
+                  .hover-content
+                    // Add to Cart
+                    .add-to-cart-btn
+                      a.btn.essence-btn(href="#") Add to Cart
+            // Single Product
+            .col-12.col-sm-6.col-lg-4
+              .single-product-wrapper
+                // Product Image
+                .product-img
+                  img(src="/img/product-img/product-4.jpg", alt="")
+                  // Hover Thumb
+                  img.hover-img(src="/img/product-img/product-5.jpg", alt="")
+                  // Favourite
+                  .product-favourite
+                    a.favme.fa.fa-heart(href="#")
+                // Product Description
+                .product-description
+                  span topshop
+                  a(href="/goods/P1001/index.html")
+                    h6 Knot Front Mini Dress
+                  p.product-price $80.00
+                  // Hover Content
+                  .hover-content
+                    // Add to Cart
+                    .add-to-cart-btn
+                      a.btn.essence-btn(href="#") Add to Cart
+            // Single Product
+            .col-12.col-sm-6.col-lg-4
+              .single-product-wrapper
+                // Product Image
+                .product-img
+                  img(src="/img/product-img/product-5.jpg", alt="")
+                  // Hover Thumb
+                  img.hover-img(src="/img/product-img/product-6.jpg", alt="")
+                  // Product Badge
+                  .product-badge.offer-badge
+                    span -30%
+                  // Favourite
+                  .product-favourite
+                    a.favme.fa.fa-heart(href="#")
+                // Product Description
+                .product-description
+                  span topshop
+                  a(href="/goods/P1001/index.html")
+                    h6 Knot Front Mini Dress
+                  p.product-price
+                    span.old-price $75.00
+                    | $55.00
+                  // Hover Content
+                  .hover-content
+                    // Add to Cart
+                    .add-to-cart-btn
+                      a.btn.essence-btn(href="#") Add to Cart
+            // Single Product
+            .col-12.col-sm-6.col-lg-4
+              .single-product-wrapper
+                // Product Image
+                .product-img
+                  img(src="/img/product-img/product-6.jpg", alt="")
+                  // Hover Thumb
+                  img.hover-img(src="/img/product-img/product-7.jpg", alt="")
+                  // Favourite
+                  .product-favourite
+                    a.favme.fa.fa-heart(href="#")
+                // Product Description
+                .product-description
+                  span topshop
+                  a(href="/goods/P1001/index.html")
+                    h6 Knot Front Mini Dress
+                  p.product-price $80.00
+                  // Hover Content
+                  .hover-content
+                    // Add to Cart
+                    .add-to-cart-btn
+                      a.btn.essence-btn(href="#") Add to Cart
+            // Single Product
+            .col-12.col-sm-6.col-lg-4
+              .single-product-wrapper
+                // Product Image
+                .product-img
+                  img(src="/img/product-img/product-7.jpg", alt="")
+                  // Hover Thumb
+                  img.hover-img(src="/img/product-img/product-8.jpg", alt="")
+                  // Product Badge
+                  .product-badge.new-badge
+                    span New
+                  // Favourite
+                  .product-favourite
+                    a.favme.fa.fa-heart(href="#")
+                // Product Description
+                .product-description
+                  span topshop
+                  a(href="/goods/P1001/index.html")
+                    h6 Knot Front Mini Dress
+                  p.product-price $80.00
+                  // Hover Content
+                  .hover-content
+                    // Add to Cart
+                    .add-to-cart-btn
+                      a.btn.essence-btn(href="#") Add to Cart
+            // Single Product
+            .col-12.col-sm-6.col-lg-4
+              .single-product-wrapper
+                // Product Image
+                .product-img
+                  img(src="/img/product-img/product-8.jpg", alt="")
+                  // Hover Thumb
+                  img.hover-img(src="/img/product-img/product-9.jpg", alt="")
+                  // Favourite
+                  .product-favourite
+                    a.favme.fa.fa-heart(href="#")
+                // Product Description
+                .product-description
+                  span topshop
+                  a(href="/goods/P1001/index.html")
+                    h6 Knot Front Mini Dress
+                  p.product-price $80.00
+                  // Hover Content
+                  .hover-content
+                    // Add to Cart
+                    .add-to-cart-btn
+                      a.btn.essence-btn(href="#") Add to Cart
+            // Single Product
+            .col-12.col-sm-6.col-lg-4
+              .single-product-wrapper
+                // Product Image
+                .product-img
+                  img(src="/img/product-img/product-9.jpg", alt="")
+                  // Hover Thumb
+                  img.hover-img(src="/img/product-img/product-1.jpg", alt="")
+                  // Favourite
+                  .product-favourite
+                    a.favme.fa.fa-heart(href="#")
+                // Product Description
+                .product-description
+                  span topshop
+                  a(href="/goods/P1001/index.html")
+                    h6 Knot Front Mini Dress
+                  p.product-price $80.00
+                  // Hover Content
+                  .hover-content
+                    // Add to Cart
+                    .add-to-cart-btn
+                      a.btn.essence-btn(href="#") Add to Cart
+        // Pagination
+        nav(aria-label="navigation")
+          ul.pagination.mt-50.mb-70
+            li.page-item
+              a.page-link(href="#")
+                i.fa.fa-angle-left
+            li.page-item
+              a.page-link(href="#") 1
+            li.page-item
+              a.page-link(href="#") 2
+            li.page-item
+              a.page-link(href="#") 3
+            li.page-item
+              a.page-link(href="#") ...
+            li.page-item
+              a.page-link(href="#") 21
+            li.page-item
+              a.page-link(href="#")
+                i.fa.fa-angle-right
+// ##### Shop Grid Area End #####

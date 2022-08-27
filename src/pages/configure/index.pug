@@ -1,0 +1,48 @@
+extends ../../layout/_baseof
+
+block load_scripts
+  script(src="../../main.ts" type="module")
+
+block content
+  // ##### Breadcumb Area Start #####
+  div(class="breadcumb_area bg-img", style="background-image: url(/img/bg-img/breadcumb.jpg);")
+    .container.h-100
+      .row.h-100.align-items-center
+        .col-12
+          .page-title.text-center
+            h2 Configure
+  // ##### Breadcumb Area End #####
+
+  // ##### About This Site Area Start #####
+  div(class="section-padding-80")
+    .container
+      .row
+        .col-12
+          div(class="config_area mt-50 clearfix")
+            form(action="#", method="post")
+              .row
+                .col-12.mb-15
+                  .cart-page-heading
+                    h5 Googleタグマネージャー
+                .col-md-6.mb-3
+                  label(for="container_id") コンテナID 
+                  input.form-control(type="text", id="container_id", value="", required)
+                .col-md-6.mb-3
+                  label(for="datalayer_name") データレイヤー変数名 
+                  input.form-control(type="text", id="datalayer_name", value="dataLayer", required)
+                .col-12.mt-30.mb-15
+                  .cart-page-heading
+                    h5 個別ページ用のJavaScriptコード
+                    p ここで指定したJavaScriptコードは、該当ページにおいてデータレイヤー変数作成済みかつ、Googleタグマネージャーの読み込み前のタイミングで実行されます。このスクリプト内では、jQuery(ver2.2.4)もご利用いただけます。
+                  label(for="view_item_page") 商品詳細ページ 
+                  textarea.form-control.mb-3#view_item_page(rows=4)
+                .col-12.mb-3
+                  label(for="purchase_page") 購入完了ページ 
+                  textarea.form-control.mb-3#purchase_page(rows=4)
+                .col-12.mb-3
+                  label(for="all_page") すべてのページ 
+                  textarea.form-control.mb-3#all_page(rows=4)
+                .col-12.mb-3.mt-50
+                  input.form-control(type="button" value="Save")
+
+  // ##### About This Site Area End #####

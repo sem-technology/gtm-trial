@@ -1,0 +1,17 @@
+extends ../../../layout/_baseof
+
+block load_scripts
+  script(src="../../../main.ts" type="module")
+
+
+block content
+  // ##### Breadcumb Area Start #####
+  div(class="breadcumb_area bg-img", style="background-image: url(/img/bg-img/breadcumb.jpg);")
+    .container.h-100
+      .row.h-100.align-items-center
+        .col-12
+          .page-title.text-center
+            h2 カテゴリ「T-Shirts」
+  // ##### Breadcumb Area End #####
+
+  include ../../../includes/_list
