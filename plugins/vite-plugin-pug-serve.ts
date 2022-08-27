@@ -36,6 +36,7 @@ export const vitePluginPugServe = (): Plugin => {
           fullReqPath += "index.html"
         }
 
+        console.log(fullReqPath);
         if (fullReqPath.endsWith(".html")) {
           // xxxx.html にリクエストがきた時
           if (fs.existsSync(fullReqPath)) {
@@ -47,7 +48,7 @@ export const vitePluginPugServe = (): Plugin => {
           const pugPath = `${
             fullReqPath.slice(0, Math.max(0, fullReqPath.lastIndexOf("."))) ||
             fullReqPath
-          }.pug`.replace(server.config.root, `${server.config.root}/pages`);
+          }.pug`.replace(server.config.root, server.config.root);
           if(!fs.existsSync(pugPath)){
             // xxxx.pug が存在しないなら 404 を返す
             return send(req, res, "404 Not Found", "html", {});
