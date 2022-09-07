@@ -31,6 +31,50 @@ block content
                   label(for="datalayer_name") データレイヤー変数名 
                   input.form-control(type="text", id="datalayer_name", value="dataLayer", required)
                 .col-12.mt-30.mb-15
+                  .cart-page-heading 
+                    h5 gtag / Googleタグ
+                .col-12.mb-3 
+                  label(for="gtag_id_01") gtagのIDを指定
+                  p.hint
+                    | ページで読み込む追加のgtagのIDを指定します。最大5つまで指定し、読み込むことができます。gtagのJavaScriptの読み込みのみが自動で実行されるため、JavaScript読み込み後の
+                    | gtagコマンドの実行は別途「個別ページ用のJavaScriptコード」にて設定してください。
+                  table.gtag_table
+                    tr
+                      td &lt;script async src="https://www.googletagmanager.com/gtag/js?id="
+                      td 
+                        input.form-control(type="text" id="gtag_id_01" value="")
+                      td "&gt;&lt;/script&gt;
+                    tr
+                      td &lt;script async src="https://www.googletagmanager.com/gtag/js?id="
+                      td 
+                        input.form-control(type="text" id="gtag_id_02" value="")
+                      td "&gt;&lt;/script&gt;
+                    tr
+                      td &lt;script async src="https://www.googletagmanager.com/gtag/js?id="
+                      td 
+                        input.form-control(type="text" id="gtag_id_03" value="")
+                      td "&gt;&lt;/script&gt;
+                    tr
+                      td &lt;script async src="https://www.googletagmanager.com/gtag/js?id="
+                      td 
+                        input.form-control(type="text" id="gtag_id_04" value="")
+                      td "&gt;&lt;/script&gt;
+                    tr
+                      td &lt;script async src="https://www.googletagmanager.com/gtag/js?id="
+                      td 
+                        input.form-control(type="text" id="gtag_id_05" value="")
+                      td "&gt;&lt;/script&gt;
+                    tr 
+                      td(colspan="3") &lt;script&gt;
+                    tr
+                      td(colspan="3") window.dataLayer = window.dataLayer || [];
+                    tr 
+                      td(colspan="3") function gtag() { dataLayer.push(arguments); }
+                    tr
+                      td(colspan="3") gtag("js", new Date());
+                    tr
+                      td(colspan="3") &lt;/script&gt;
+                .col-12.mt-30.mb-15
                   .cart-page-heading
                     h5 個別ページ用のJavaScriptコード
                     p ここで指定したJavaScriptコードは、該当ページにおいてデータレイヤー変数作成済みかつ、Googleタグマネージャーの読み込み前のタイミングで実行されます。このスクリプト内では、jQuery(ver2.2.4)もご利用いただけます。
