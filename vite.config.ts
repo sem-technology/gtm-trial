@@ -23,6 +23,8 @@ export default defineConfig({
         list_categories: resolve(__dirname, pageRoot, 'list/categories/index.pug'),
         list_favorite: resolve(__dirname, pageRoot, 'list/favorite/index.pug'),
         list_search: resolve(__dirname, pageRoot, 'list/search/index.pug'),
+        contact_form: resolve(__dirname, pageRoot, 'contact/form/index.pug'),
+        contact_thanks: resolve(__dirname, pageRoot, 'contact/thanks/index.pug'),
       }
     }
   },
