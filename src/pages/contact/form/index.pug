@@ -1,0 +1,38 @@
+extends ../../../layout/_baseof
+
+block load_scripts
+  script(src="../../../main.ts" type="module")
+
+block content
+  // ##### Breadcumb Area Start #####
+  div(class="breadcumb_area bg-img", style="background-image: url(/img/bg-img/breadcumb.jpg);")
+    .container.h-100
+      .row.h-100.align-items-center
+        .col-12
+          .page-title.text-center
+            h2 Contact Form
+  // ##### Breadcumb Area End #####
+
+  // ##### About This Site Area Start #####
+  div(class="section-padding-80")
+    .container
+      .row
+        .col-12
+          div(class="contact_form mt-10 clearfix")
+            form(action="/contact/thanks/index.html", method="GET")
+              .row
+                .col-12.mb-3 
+                  label(for="fullname") お名前
+                  input.form-control(type="text", id="fullname", value="", required)
+                .col-12.mb-3 
+                  label(for="company_name") 会社名
+                  input.form-control(type="text", id="company_name", value="", required)
+                .col-12.mb-3
+                  label(for="email") メールアドレス
+                  input.form-control(type="email", id="email", value="", required)
+                .col-12.mb-3
+                  label(for="content") お問い合わせ内容詳細
+                  textarea.form-control.mb-3#content(rows=4)
+                .col-12.mb-3.mt-50
+                  input.form-control(type="submit" value="Send")
+

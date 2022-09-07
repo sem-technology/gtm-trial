@@ -1343,25 +1343,25 @@ img {
     width: 100%;
     border-radius: 0; }
 
-.config_area form label {
+.config_area form label, .contact_form form label {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 600; }
-  .config_area form label span {
+  .config_area form label span, .contact_form form label span {
     color: #0315ff; }
-.config_area form .form-control {
+.config_area form .form-control, .contact_form form .form-control {
   height: 42px;
-  border: 1px solid #ebebeb;
+  border: 1px solid #aaa;
   background-color: transparent;
   border-radius: 0; }
-.config_area form textarea.form-control {
+.config_area form textarea.form-control, .contact_form form textarea.form-control {
   height: inherit; }
-  .config_area form .no-border {
+  .config_area form .no-border, .contact_form form .no-border {
   border: 0px; }
-  .config_area form .nice-select {
+  .config_area form .nice-select, .contact_form form .nice-select {
   border-radius: 0;
-  border: 1px solid #ebebeb; }
-  .config_area form .nice-select .list {
+  border: 1px solid #aaa; }
+  .config_area form .nice-select .list, .contact_form form .nice-select .list {
     width: 100%;
     border-radius: 0; }
     
