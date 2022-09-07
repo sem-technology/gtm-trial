@@ -1780,3 +1780,10 @@ img {
 form input[type="button"] {
   cursor: pointer;
 }
+
+
+.gtag_table tr td {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 16px;
+}
