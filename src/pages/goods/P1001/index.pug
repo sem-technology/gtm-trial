@@ -1,44 +1,41 @@
 extends ../../../layout/_baseof
 
 block load_scripts
-  script(src="../../../main.ts" type="module")
+  script(src="/main.ts" type="module")
 
 block content 
   // ##### Single Product Details Area Start #####
   section(class="single_product_details_area d-flex align-items-center")
     // Single Product Thumb
     div(class="single_product_thumb clearfix")
-      div(class="product_thumbnail_slides owl-carousel")
-        img(src="/img/product-img/product-big-1.jpg", alt="")
-        img(src="/img/product-img/product-big-2.jpg", alt="")
-        img(src="/img/product-img/product-big-3.jpg", alt="")
+      //- div(class="product_thumbnail_slides owl-carousel")
+      img(src="/img/product-img/pen.png", alt="")
     // Single Product Description
     div(class="single_product_desc clearfix")
-      span mango
-      a(href="cart.html")
-        h2 One Shoulder Glitter Midi Dress
+      span 筆記具専門店
+      a(href="#")
+        h2 高級万年筆 - エレガンス・コレクション
       p.product-price
-        span.old-price $65.00
-        | $49.00
-      p.product-desc Mauris viverra cursus ante laoreet eleifend. Donec vel fringilla ante. Aenean finibus velit id urna vehicula, nec maximus est sollicitudin.
+        span.old-price ¥56,000
+        | ¥44,800
+      p.product-desc 熟練の職人によって一本一本丁寧に仕上げられた、極上の書き味を誇る万年筆です。手に吸い付くようなフィット感と、滑らかなインクフローが、書く喜びを再発見させてくれます。ビジネスからプライベートまで、大切な瞬間に寄り添う一本です。
       // Form
       form.cart-form.clearfix(method="post")
         // Select Box
         .select-box.d-flex.mt-50.mb-30
           select#productSize.mr-5(name="select")
-            option(value="value") Size: XL
-            option(value="value") Size: X
-            option(value="value") Size: M
-            option(value="value") Size: S
+            option(value="value") ペン先: EF (極細)
+            option(value="value") ペン先: F (細字)
+            option(value="value") ペン先: M (中字)
+            option(value="value") ペン先: B (太字)
           select#productColor(name="select")
-            option(value="value") Color: Black
-            option(value="value") Color: White
-            option(value="value") Color: Red
-            option(value="value") Color: Purple
+            option(value="value") カラー: ブラック
+            option(value="value") カラー: ブルー
+            option(value="value") カラー: マルーン
         // Cart & Favourite Box
         .cart-fav-box.d-flex.align-items-center
           // Cart
-          button.btn.essence-btn(type="submit", name="addtocart", value="5") Add to cart
+          button.btn.essence-btn(type="submit", name="addtocart", value="5") カートに追加
           // Favourite
           .product-favourite.ml-4
             a.favme.fa.fa-heart(href="#")

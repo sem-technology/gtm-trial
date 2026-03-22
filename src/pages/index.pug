@@ -1,18 +1,18 @@
 extends ./../layout/_baseof
 
 block load_scripts
-  script(src="./../main.ts" type="module")
+  script(src="/main.ts" type="module")
 
 block content 
   // ##### Welcome Area Start #####
-  section(class="welcome_area bg-img background-overlay", style="background-image: url(img/bg-img/bg-1.jpg);")
+  section(class="welcome_area bg-img background-overlay", style="background-image: url(img/bg-img/stationery_hero.png);")
     .container.h-100
       .row.h-100.align-items-center
         .col-12
           .hero-content
-            h6 asoss
-            h2 New Collection
-            a.btn.essence-btn(href="#") view collection
+            h6 厳選された文房具
+            h2 至高の筆記具を取り揃えて
+            a.btn.essence-btn(href="/list/categories/index.html") 商品を見る
   // ##### Welcome Area End #####
   // ##### Top Catagory Area Start #####
   div(class="top_catagory_area section-padding-80 clearfix")
@@ -20,19 +20,19 @@ block content
       .row.justify-content-center
         // Single Catagory
         .col-12.col-sm-6.col-md-4
-          div(class="single_catagory_area d-flex align-items-center justify-content-center bg-img", style="background-image: url(img/bg-img/bg-2.jpg);")
+          div(class="single_catagory_area d-flex align-items-center justify-content-center bg-img", style="background-image: url(img/product-img/pen.png);")
             .catagory-content
-              a(href="#") Clothing
+              a(href="/list/categories/index.html") 筆記具
         // Single Catagory
         .col-12.col-sm-6.col-md-4
-          div(class="single_catagory_area d-flex align-items-center justify-content-center bg-img", style="background-image: url(img/bg-img/bg-3.jpg);")
+          div(class="single_catagory_area d-flex align-items-center justify-content-center bg-img", style="background-image: url(img/product-img/system.png);")
             .catagory-content
-              a(href="#") Shoes
+              a(href="/list/categories/index.html") 手帳・ノート
         // Single Catagory
         .col-12.col-sm-6.col-md-4
-          div(class="single_catagory_area d-flex align-items-center justify-content-center bg-img", style="background-image: url(img/bg-img/bg-4.jpg);")
+          div(class="single_catagory_area d-flex align-items-center justify-content-center bg-img", style="background-image: url(img/product-img/leather.png);")
             .catagory-content
-              a(href="#") Accessories
+              a(href="/list/categories/index.html") 革小物
   // ##### Top Catagory Area End #####
 
   // ##### CTA Area Start #####
@@ -40,12 +40,12 @@ block content
     .container
       .row
         .col-12
-          .cta-content.bg-img.background-overlay(style="background-image: url(img/bg-img/bg-5.jpg);")
+          .cta-content.bg-img.background-overlay(style="background-image: url(img/bg-img/bg-5.png);")
             .h-100.d-flex.align-items-center.justify-content-end
               .cta--text
-                h6 -60%
-                h2 Global Sale
-                a.btn.essence-btn(href="#") Buy Now
+                h6 高品質な文具
+                h2 文房具セール実施中
+                a.btn.essence-btn(href="/list/categories/index.html") 今すぐチェック
   // ##### CTA Area End #####
 
   // ##### New Arrivals Area Start #####
@@ -55,102 +55,70 @@ block content
         .col-12
           .section-heading.text-center
             h2 Popular Products
-    .container
-      .row
-        .col-12
-          .popular-products-slides.owl-carousel
-            // Single Product
-            .single-product-wrapper
-              // Product Image
-              .product-img
-                img(src="/img/product-img/product-1.jpg", alt="")
-                // Hover Thumb
-                img.hover-img(src="/img/product-img/product-2.jpg", alt="")
-                // Favourite
-                .product-favourite
-                  a.favme.fa.fa-heart(href="#")
-              // Product Description
-              .product-description
-                span topshop
-                a(href="single-product-details.html")
-                  h6 Knot Front Mini Dress
-                p.product-price $80.00
-                // Hover Content
-                .hover-content
-                  // Add to Cart
-                  .add-to-cart-btn
-                    a.btn.essence-btn(href="#") Add to Cart
-            // Single Product
-            .single-product-wrapper
-              // Product Image
-              .product-img
-                img(src="/img/product-img/product-2.jpg", alt="")
-                // Hover Thumb
-                img.hover-img(src="/img/product-img/product-3.jpg", alt="")
-                // Favourite
-                .product-favourite
-                  a.favme.fa.fa-heart(href="#")
-              // Product Description
-              .product-description
-                span topshop
-                a(href="single-product-details.html")
-                  h6 Poplin Displaced Wrap Dress
-                p.product-price $80.00
-                // Hover Content
-                .hover-content
-                  // Add to Cart
-                  .add-to-cart-btn
-                    a.btn.essence-btn(href="#") Add to Cart
-            // Single Product
-            .single-product-wrapper
-              // Product Image
-              .product-img
-                img(src="/img/product-img/product-3.jpg", alt="")
-                // Hover Thumb
-                img.hover-img(src="/img/product-img/product-4.jpg", alt="")
-                // Product Badge
-                .product-badge.offer-badge
-                  span -30%
-                // Favourite
-                .product-favourite
-                  a.favme.fa.fa-heart(href="#")
-              // Product Description
-              .product-description
-                span mango
-                a(href="single-product-details.html")
-                  h6 PETITE Crepe Wrap Mini Dress
-                p.product-price
-                  span.old-price $75.00
-                  | $55.00
-                // Hover Content
-                .hover-content
-                  // Add to Cart
-                  .add-to-cart-btn
-                    a.btn.essence-btn(href="#") Add to Cart
-            // Single Product
-            .single-product-wrapper
-              // Product Image
-              .product-img
-                img(src="/img/product-img/product-4.jpg", alt="")
-                // Hover Thumb
-                img.hover-img(src="/img/product-img/product-5.jpg", alt="")
-                // Product Badge
-                .product-badge.new-badge
-                  span New
-                // Favourite
-                .product-favourite
-                  a.favme.fa.fa-heart(href="#")
-              // Product Description
-              .product-description
-                span mango
-                a(href="single-product-details.html")
-                  h6 PETITE Belted Jumper Dress
-                p.product-price $80.00
-                // Hover Content
-                .hover-content
-                  // Add to Cart
-                  .add-to-cart-btn
-                    a.btn.essence-btn(href="#") Add to Cart
+
+    .popular-products-slides.owl-carousel
+      .single-product-wrapper
+        .product-img
+          img(src="/img/product-img/pen.png", alt="")
+          img.hover-img(src="/img/product-img/pen.png", alt="")
+          .product-favourite
+            a.favme.fa.fa-heart(href="#")
+        .product-description
+          span High-end
+          a(href="single-product-details.html")
+            h6 高級万年筆
+          p.product-price ¥56,000
+          .hover-content
+            .add-to-cart-btn
+              a.btn.essence-btn(href="#") Add to Cart
+      .single-product-wrapper
+        .product-img
+          img(src="/img/product-img/leather.png", alt="")
+          img.hover-img(src="/img/product-img/leather.png", alt="")
+          .product-favourite
+            a.favme.fa.fa-heart(href="#")
+        .product-description
+          span Leather
+          a(href="single-product-details.html")
+            h6 栃木レザー製ペンケース
+          p.product-price ¥19,200
+          .hover-content
+            .add-to-cart-btn
+              a.btn.essence-btn(href="#") Add to Cart
+      .single-product-wrapper
+        .product-img
+          img(src="/img/product-img/system.png", alt="")
+          img.hover-img(src="/img/product-img/system.png", alt="")
+          .product-badge.offer-badge
+            span -30%
+          .product-favourite
+            a.favme.fa.fa-heart(href="#")
+        .product-description
+          span Journal
+          a(href="single-product-details.html")
+            h6 システム手帳
+          p.product-price
+            span.old-price ¥56,000
+            | ¥44,800
+          .hover-content
+            .add-to-cart-btn
+              a.btn.essence-btn(href="#") Add to Cart
+      .single-product-wrapper
+        .product-img
+          img(src="/img/product-img/notepad.png", alt="")
+          img.hover-img(src="/img/product-img/notepad.png", alt="")
+          .product-badge.new-badge
+            span New
+          .product-favourite
+            a.favme.fa.fa-heart(href="#")
+        .product-description
+          span Office
+          a(href="single-product-details.html")
+            h6 ノートパッドホルダー
+          p.product-price ¥24,000
+          .hover-content
+            .add-to-cart-btn
+              a.btn.essence-btn(href="#") Add to Cart
   // ##### New Arrivals Area End #####
 
   // ##### Brands Area Start #####

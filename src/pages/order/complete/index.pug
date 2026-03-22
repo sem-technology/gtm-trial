@@ -1,16 +1,16 @@
 extends ../../../layout/_baseof
 
 block load_scripts
-  script(src="../../../main.ts" type="module")
+  script(src="/main.ts" type="module")
 
 block content
   // ##### Breadcumb Area Start #####
-  div(class="breadcumb_area bg-img", style="background-image: url(/img/bg-img/breadcumb.jpg);")
+  div(class="breadcumb_area bg-img", style="background-image: url(/img/bg-img/breadcumb.png);")
     .container.h-100
       .row.h-100.align-items-center
         .col-12
           .page-title.text-center
-            h2 Order Complete
+            h2 注文完了
   // ##### Breadcumb Area End #####
   // ##### Checkout Area Start #####
   div(class="checkout_area section-padding-80")
@@ -19,78 +19,78 @@ block content
         .col-12.col-md-6
           div(class="checkout_details_area mt-50 clearfix")
             .cart-page-heading.mb-30
-              h5 Billing Address
+              h5 お届け先情報
             form(action="#", method="post")
               .row
                 .col-md-6.mb-3
-                  label(for="first_name") First Name 
+                  label(for="last_name") 姓 
                     span *
-                  p.form-control.no-border Ryota
+                  p.form-control.no-border 山田
                 .col-md-6.mb-3
-                  label(for="last_name") Last Name 
+                  label(for="first_name") 名 
                     span *
-                  p.form-control.no-border Yamada
+                  p.form-control.no-border 涼太
                 .col-12.mb-3
-                  label(for="company") Company Name
-                  p#company.form-control.no-border SEM Technology
+                  label(for="company") 会社名
+                  p#company.form-control.no-border 株式会社SEM Technology
                 .col-12.mb-3
-                  label(for="country") Country 
+                  label(for="country") 国 
                     span *
-                  p.form-control.no-border Japan
+                  p.form-control.no-border 日本
                 .col-12.mb-3
-                  label(for="street_address") Address 
-                    span *
-                  p.form-control.no-border 6-23-4, Jingumae
-                  p.form-control.no-border 2F, Kuwano bldg
-                .col-12.mb-3
-                  label(for="postcode") Postcode 
+                  label(for="postcode") 郵便番号 
                     span *
                   p.form-control.no-border 150-0001
                 .col-12.mb-3
-                  label(for="city") Town/City 
+                  label(for="state") 都道府県 
                     span *
-                  p.form-control.no-border Shibuya
+                  p.form-control.no-border 東京都
                 .col-12.mb-3
-                  label(for="state") Province 
+                  label(for="city") 市区町村 
                     span *
-                  p.form-control.no-border Tokyo
+                  p.form-control.no-border 渋谷区
                 .col-12.mb-3
-                  label(for="phone_number") Phone No 
+                  label(for="street_address") 住所（番地・建物名） 
+                    span *
+                  p.form-control.no-border 神宮前 6-23-4
+                  p.form-control.no-border 桑野ビル 2F
+                .col-12.mb-3
+                  label(for="phone_number") 電話番号 
                     span *
                   p.form-control.no-border 050-5867-4149
                 .col-12.mb-4
-                  label(for="email_address") Email Address 
+                  label(for="email_address") メールアドレス 
                     span *
                   p.form-control.no-border yamada @ sem-technology.info
         .col-12.col-md-6.col-lg-5.ml-lg-auto
           .order-details-confirmation
             .cart-page-heading
-              h5 Your Order(ID: A123456789)
-              p The Details
+              h5 ご注文内容(ID: A123456789)
+              p 詳細
             ul.order-details-form.mb-4
               li
-                span Product
-                span Total
+                span 商品名
+                span 合計
               li
-                span Cocktail Yellow dress
-                span $59.90
+                span 高級万年筆
+                span ¥24,000
               li
-                span Subtotal
-                span $59.90
+                span 小計
+                span ¥24,000
               li
-                span Shipping
-                span Free
+                span 送料
+                span 無料
               li
-                span Total
-                span $59.90
+                span 合計
+                span ¥24,000
             #accordion.mb-4(role="tablist")
               .card
                 #headingThree.card-header(role="tab")
                   h6.mb-0
                     a.collapsed(data-toggle="collapse", href="#collapseThree", aria-expanded="false", aria-controls="collapseThree")
                       i.fa.fa-circle-o.mr-3
-                      | credit card
+                      | クレジットカード
                 #collapseThree.collapse(role="tabpanel", aria-labelledby="headingThree", data-parent="#accordion")
                   .card-body
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quo sint repudiandae suscipit ab soluta delectus voluptate, vero vitae
+                    p クレジットカードでの決済が完了しました。
   // ##### Checkout Area End #####

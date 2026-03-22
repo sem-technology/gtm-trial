@@ -22,88 +22,42 @@ header(class="header_area")
         .classynav
           ul
             li
-              a(href="#") Shop
-              .megamenu
-                ul.single-mega.cn-col-4
-                  li.title Women&apos;s Collection
-                  li
-                    a(href="/list/categories/index.html") Dresses
-                  li
-                    a(href="/list/categories/index.html") Blouses &amp;amp; Shirts
-                  li
-                    a(href="/list/categories/index.html") T-shirts
-                  li
-                    a(href="/list/categories/index.html") Rompers
-                  li
-                    a(href="/list/categories/index.html") Bras &amp;amp; Panties
-                ul.single-mega.cn-col-4
-                  li.title Men&apos;s Collection
-                  li
-                    a(href="/list/categories/index.html") T-Shirts
-                  li
-                    a(href="/list/categories/index.html") Polo
-                  li
-                    a(href="/list/categories/index.html") Shirts
-                  li
-                    a(href="/list/categories/index.html") Jackets
-                  li
-                    a(href="/list/categories/index.html") Trench
-                ul.single-mega.cn-col-4
-                  li.title Kid&apos;s Collection
-                  li
-                    a(href="/list/categories/index.html") Dresses
-                  li
-                    a(href="/list/categories/index.html") Shirts
-                  li
-                    a(href="/list/categories/index.html") T-shirts
-                  li
-                    a(href="/list/categories/index.html") Jackets
-                  li
-                    a(href="/list/categories/index.html") Trench
-                .single-mega.cn-col-4
-                  img(src="/img/bg-img/bg-6.jpg", alt="")
-            li
-              a(href="#") Pages
+              a(href="#") ページ一覧
               ul.dropdown
                 li
-                  a(href="/index.html") Home
-                li 
-                  a(href="/list/categories/index.html") Category Page
+                  a(href="/index.html") ホーム
                 li
-                  a(href="/list/search/index.html") Search Result
-                li 
-                  a(href="/list/favorite/index.html") Favorite Items
+                  a(href="/list/categories/index.html") 商品一覧
+                  ul.dropdown
+                    li
+                      a(href="/list/categories/index.html") カテゴリー
+                    li
+                      a(href="/list/search/index.html") 検索結果
                 li
-                  a(href="/goods/P1001/index.html") Product Details
+                  a(href="/goods/P1001/index.html") 商品詳細
                 li
-                  a(href="/order/checkout/index.html") Checkout
-                li 
-                  a(href="/order/complete/index.html") Order Complete
+                  a(href="/order/checkout/index.html") お支払い
                 li
-                  a(href="/blog/index.html") Blog
+                  a(href="/blog/index.html") ブログ
                 li
-                  a(href="/blog/posts/0001/index.html") Single Blog
-                //- li
-                //-   a(href="regular-page.html") Regular Page
+                  a(href="/blog/posts/0001/index.html") ブログ記事
                 li
-                  a(href="/contact/form/index.html") Contact Foprm
+                  a(href="/order/complete/index.html") 購入完了
                 li
-                  a(href="/contact/thanks/index.html") Contact Thanks
-                li 
-                  a(href="/about/index.html") About This Site
-                li 
-                  a(href="/configure/index.html") Configure
+                  a(href="/list/favorite/index.html") お気に入り
+                li
+                  a(href="/contact/form/index.html") お問い合わせ
+                li
+                  a(href="/configure/index.html") 設定
             li
-              a(href="/blog/index.html") Blog
-            li
-              a(href="/contact/form/index.html") Contact
+              a(href="/contact/form/index.html") お問い合わせ
         // Nav End
     // Header Meta Data
     .header-meta.d-flex.clearfix.justify-content-end
       // Search Area
       .search-area
         form(action="/list/search/index.html", method="GET")
-          input#headerSearch(type="search", name="keyword", placeholder="Type for search")
+          input#headerSearch(type="search", name="keyword", placeholder="キーワードを入力")
           button(type="submit")
             i.fa.fa-search(aria-hidden="true")
       // Favourite Area

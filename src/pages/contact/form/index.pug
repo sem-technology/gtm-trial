@@ -1,11 +1,11 @@
 extends ../../../layout/_baseof
 
 block load_scripts
-  script(src="../../../main.ts" type="module")
+  script(src="/main.ts" type="module")
 
 block content
   // ##### Breadcumb Area Start #####
-  div(class="breadcumb_area bg-img", style="background-image: url(/img/bg-img/breadcumb.jpg);")
+  div(class="breadcumb_area bg-img", style="background-image: url(/img/bg-img/breadcumb.png);")
     .container.h-100
       .row.h-100.align-items-center
         .col-12
@@ -23,16 +23,16 @@ block content
               .row
                 .col-12.mb-3 
                   label(for="fullname") お名前
-                  input.form-control(type="text", id="fullname", value="")
+                  input.form-control(type="text", id="fullname", name="fullname", value="")
                 .col-12.mb-3 
                   label(for="company_name") 会社名
-                  input.form-control(type="text", id="company_name", value="")
+                  input.form-control(type="text", id="company_name", name="company_name", value="")
                 .col-12.mb-3
                   label(for="email") メールアドレス
-                  input.form-control(type="email", id="email", value="")
+                  input.form-control(type="email", id="email", name="email", value="")
                 .col-12.mb-3
                   label(for="content") お問い合わせ内容詳細
-                  textarea.form-control.mb-3#content(rows=4)
+                  textarea.form-control.mb-3#content(name="content" rows=4)
                 .col-12.mb-3.mt-50
-                  input.form-control(type="submit" value="Send")
+                  input.form-control(type="submit" name="submit_btn" value="Send")
 

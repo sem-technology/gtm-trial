@@ -7,105 +7,69 @@ section(class="shop_grid_area section-padding-80")
           // ##### Single Widget #####
           .widget.catagory.mb-50
             // Widget Title
-            h6.widget-title.mb-30 Catagories
+            h6.widget-title.mb-30 カテゴリー
             // Catagories
             .catagories-menu
               ul#menu-content2.menu-content.collapse.show
                 // Single Item
                 li(data-toggle="collapse", data-target="#clothing")
-                  a(href="#") clothing
+                  a(href="#") 筆記具
                   ul#clothing.sub-menu.collapse.show
                     li
-                      a(href="#") All
+                      a(href="#") すべて見る
                     li
-                      a(href="#") Bodysuits
+                      a(href="#") 万年筆
                     li
-                      a(href="#") Dresses
+                      a(href="#") ボールペン
                     li
-                      a(href="#") Hoodies &amp;amp; Sweats
+                      a(href="#") シャープペンシル
                     li
-                      a(href="#") Jackets &amp;amp; Coats
-                    li
-                      a(href="#") Jeans
-                    li
-                      a(href="#") Pants &amp;amp; Leggings
-                    li
-                      a(href="#") Rompers &amp;amp; Jumpsuits
-                    li
-                      a(href="#") Shirts &amp;amp; Blouses
-                    li
-                      a(href="#") Shirts
-                    li
-                      a(href="#") Sweaters &amp;amp; Knits
+                      a(href="#") インク・替芯
                 // Single Item
                 li.collapsed(data-toggle="collapse", data-target="#shoes")
-                  a(href="#") shoes
+                  a(href="#") ノート・紙製品
                   ul#shoes.sub-menu.collapse
                     li
-                      a(href="#") All
+                      a(href="#") すべて見る
                     li
-                      a(href="#") Bodysuits
+                      a(href="#") システム手帳
                     li
-                      a(href="#") Dresses
+                      a(href="#") ノートパッド
                     li
-                      a(href="#") Hoodies &amp;amp; Sweats
+                      a(href="#") 便箋・封筒
                     li
-                      a(href="#") Jackets &amp;amp; Coats
-                    li
-                      a(href="#") Jeans
-                    li
-                      a(href="#") Pants &amp;amp; Leggings
-                    li
-                      a(href="#") Rompers &amp;amp; Jumpsuits
-                    li
-                      a(href="#") Shirts &amp;amp; Blouses
-                    li
-                      a(href="#") Shirts
-                    li
-                      a(href="#") Sweaters &amp;amp; Knits
+                      a(href="#") ダイアリー
                 // Single Item
                 li.collapsed(data-toggle="collapse", data-target="#accessories")
-                  a(href="#") accessories
+                  a(href="#") 革小物・デスク周り
                   ul#accessories.sub-menu.collapse
                     li
-                      a(href="#") All
+                      a(href="#") すべて見る
                     li
-                      a(href="#") Bodysuits
+                      a(href="#") ペンケース
                     li
-                      a(href="#") Dresses
+                      a(href="#") 名刺入れ
                     li
-                      a(href="#") Hoodies &amp;amp; Sweats
+                      a(href="#") ブックカバー
                     li
-                      a(href="#") Jackets &amp;amp; Coats
-                    li
-                      a(href="#") Jeans
-                    li
-                      a(href="#") Pants &amp;amp; Leggings
-                    li
-                      a(href="#") Rompers &amp;amp; Jumpsuits
-                    li
-                      a(href="#") Shirts &amp;amp; Blouses
-                    li
-                      a(href="#") Shirts
-                    li
-                      a(href="#") Sweaters &amp;amp; Knits
+                      a(href="#") デスクマット
           // ##### Single Widget #####
           .widget.price.mb-50
             // Widget Title
-            h6.widget-title.mb-30 Filter by
+            h6.widget-title.mb-30 絞り込み
             // Widget Title 2
-            p.widget-title2.mb-30 Price
+            p.widget-title2.mb-30 価格
             .widget-desc
               .slider-range
-                .slider-range-price.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all(data-min="49", data-max="360", data-unit="$", data-value-min="49", data-value-max="360", data-label-result="Range:")
+                .slider-range-price.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all(data-min="7840", data-max="57600", data-unit="¥", data-value-min="7840", data-value-max="57600", data-label-result="範囲:")
                   .ui-slider-range.ui-widget-header.ui-corner-all
                   span.ui-slider-handle.ui-state-default.ui-corner-all(tabindex="0")
                   span.ui-slider-handle.ui-state-default.ui-corner-all(tabindex="0")
-                .range-price Range: $49.00 - $360.00
+                .range-price 範囲: ¥7,840 - ¥57,600
           // ##### Single Widget #####
           .widget.color.mb-50
             // Widget Title 2
-            p.widget-title2.mb-30 Color
+            p.widget-title2.mb-30 カラー
             .widget-desc
               ul.d-flex
                 li
@@ -131,7 +95,7 @@ section(class="shop_grid_area section-padding-80")
           // ##### Single Widget #####
           .widget.brands.mb-50
             // Widget Title 2
-            p.widget-title2.mb-30 Brands
+            p.widget-title2.mb-30 ブランド
             .widget-desc
               ul
                 li
@@ -153,16 +117,16 @@ section(class="shop_grid_area section-padding-80")
                 .total-products
                   p
                     span 186
-                    | products found
+                    | 件の商品が見つかりました
                 // Sorting
                 .product-sorting.d-flex
-                  p Sort by:
+                  p 並び替え:
                   form(action="#", method="get")
                     select#sortByselect(name="select")
-                      option(value="value") Highest Rated
-                      option(value="value") Newest
-                      option(value="value") Price: $$ - $
-                      option(value="value") Price: $ - $$
+                      option(value="value") おすすめ順
+                      option(value="value") 新着順
+                      option(value="value") 価格の高い順
+                      option(value="value") 価格の安い順
                     input.d-none(type="submit", value="")
           .row
             // Single Product
@@ -170,9 +134,9 @@ section(class="shop_grid_area section-padding-80")
               .single-product-wrapper
                 // Product Image
                 .product-img
-                  img(src="/img/product-img/product-1.jpg", alt="")
+                  img(src="/img/product-img/pen.png", alt="")
                   // Hover Thumb
-                  img.hover-img(src="/img/product-img/product-2.jpg", alt="")
+                  img.hover-img(src="/img/product-img/pen.png", alt="")
                   // Product Badge
                   .product-badge.offer-badge
                     span -30%
@@ -181,47 +145,47 @@ section(class="shop_grid_area section-padding-80")
                     a.favme.fa.fa-heart(href="#")
                 // Product Description
                 .product-description
-                  span topshop
+                  span 筆記具専門店
                   a(href="/goods/P1001/index.html")
-                    h6 Knot Front Mini Dress
+                    h6 高級万年筆 - エレガンス
                   p.product-price
-                    span.old-price $75.00
-                    | $55.00
+                    span.old-price ¥56,000
+                    | ¥44,800
                   // Hover Content
                   .hover-content
                     // Add to Cart
                     .add-to-cart-btn
-                      a.btn.essence-btn(href="#") Add to Cart
+                      a.btn.essence-btn(href="#") カートに追加
             // Single Product
             .col-12.col-sm-6.col-lg-4
               .single-product-wrapper
                 // Product Image
                 .product-img
-                  img(src="/img/product-img/product-2.jpg", alt="")
+                  img(src="/img/product-img/leather.png", alt="")
                   // Hover Thumb
-                  img.hover-img(src="/img/product-img/product-3.jpg", alt="")
+                  img.hover-img(src="/img/product-img/leather.png", alt="")
                   // Favourite
                   .product-favourite
                     a.favme.fa.fa-heart(href="#")
                 // Product Description
                 .product-description
-                  span topshop
+                  span レザー小物
                   a(href="/goods/P1001/index.html")
-                    h6 Knot Front Mini Dress
-                  p.product-price $80.00
+                    h6 栃木レザー製ペンケース
+                  p.product-price ¥19,200
                   // Hover Content
                   .hover-content
                     // Add to Cart
                     .add-to-cart-btn
-                      a.btn.essence-btn(href="#") Add to Cart
+                      a.btn.essence-btn(href="#") カートに追加
             // Single Product
             .col-12.col-sm-6.col-lg-4
               .single-product-wrapper
                 // Product Image
                 .product-img
-                  img(src="/img/product-img/product-3.jpg", alt="")
+                  img(src="/img/product-img/system.png", alt="")
                   // Hover Thumb
-                  img.hover-img(src="/img/product-img/product-4.jpg", alt="")
+                  img.hover-img(src="/img/product-img/system.png", alt="")
                   // Product Badge
                   .product-badge.new-badge
                     span New
@@ -230,45 +194,45 @@ section(class="shop_grid_area section-padding-80")
                     a.favme.fa.fa-heart(href="#")
                 // Product Description
                 .product-description
-                  span topshop
+                  span ノート・紙製品
                   a(href="/goods/P1001/index.html")
-                    h6 Knot Front Mini Dress
-                  p.product-price $80.00
+                    h6 システム手帳 - ビジネス
+                  p.product-price ¥40,000
                   // Hover Content
                   .hover-content
                     // Add to Cart
                     .add-to-cart-btn
-                      a.btn.essence-btn(href="#") Add to Cart
+                      a.btn.essence-btn(href="#") カートに追加
             // Single Product
             .col-12.col-sm-6.col-lg-4
               .single-product-wrapper
                 // Product Image
                 .product-img
-                  img(src="/img/product-img/product-4.jpg", alt="")
+                  img(src="/img/product-img/notepad.png", alt="")
                   // Hover Thumb
-                  img.hover-img(src="/img/product-img/product-5.jpg", alt="")
+                  img.hover-img(src="/img/product-img/notepad.png", alt="")
                   // Favourite
                   .product-favourite
                     a.favme.fa.fa-heart(href="#")
                 // Product Description
                 .product-description
-                  span topshop
+                  span 文房具
                   a(href="/goods/P1001/index.html")
-                    h6 Knot Front Mini Dress
-                  p.product-price $80.00
+                    h6 ノートパッドホルダー
+                  p.product-price ¥19,200
                   // Hover Content
                   .hover-content
                     // Add to Cart
                     .add-to-cart-btn
-                      a.btn.essence-btn(href="#") Add to Cart
+                      a.btn.essence-btn(href="#") カートに追加
             // Single Product
             .col-12.col-sm-6.col-lg-4
               .single-product-wrapper
                 // Product Image
                 .product-img
-                  img(src="/img/product-img/product-5.jpg", alt="")
+                  img(src="/img/product-img/pen.png", alt="")
                   // Hover Thumb
-                  img.hover-img(src="/img/product-img/product-6.jpg", alt="")
+                  img.hover-img(src="/img/product-img/pen.png", alt="")
                   // Product Badge
                   .product-badge.offer-badge
                     span -30%
@@ -277,47 +241,45 @@ section(class="shop_grid_area section-padding-80")
                     a.favme.fa.fa-heart(href="#")
                 // Product Description
                 .product-description
-                  span topshop
+                  span デスク周り
                   a(href="/goods/P1001/index.html")
-                    h6 Knot Front Mini Dress
-                  p.product-price
-                    span.old-price $75.00
-                    | $55.00
+                    h6 真鍮製ペーパーウェイト
+                  p.product-price ¥7,200
                   // Hover Content
                   .hover-content
                     // Add to Cart
                     .add-to-cart-btn
-                      a.btn.essence-btn(href="#") Add to Cart
+                      a.btn.essence-btn(href="#") カートに追加
             // Single Product
             .col-12.col-sm-6.col-lg-4
               .single-product-wrapper
                 // Product Image
                 .product-img
-                  img(src="/img/product-img/product-6.jpg", alt="")
+                  img(src="/img/product-img/leather.png", alt="")
                   // Hover Thumb
-                  img.hover-img(src="/img/product-img/product-7.jpg", alt="")
+                  img.hover-img(src="/img/product-img/leather.png", alt="")
                   // Favourite
                   .product-favourite
                     a.favme.fa.fa-heart(href="#")
                 // Product Description
                 .product-description
-                  span topshop
+                  span 筆記具専門店
                   a(href="/goods/P1001/index.html")
-                    h6 Knot Front Mini Dress
-                  p.product-price $80.00
+                    h6 ガラスペン - 幻想の青
+                  p.product-price ¥28,800
                   // Hover Content
                   .hover-content
                     // Add to Cart
                     .add-to-cart-btn
-                      a.btn.essence-btn(href="#") Add to Cart
+                      a.btn.essence-btn(href="#") カートに追加
             // Single Product
             .col-12.col-sm-6.col-lg-4
               .single-product-wrapper
                 // Product Image
                 .product-img
-                  img(src="/img/product-img/product-7.jpg", alt="")
+                  img(src="/img/product-img/system.png", alt="")
                   // Hover Thumb
-                  img.hover-img(src="/img/product-img/product-8.jpg", alt="")
+                  img.hover-img(src="/img/product-img/system.png", alt="")
                   // Product Badge
                   .product-badge.new-badge
                     span New
@@ -326,59 +288,59 @@ section(class="shop_grid_area section-padding-80")
                     a.favme.fa.fa-heart(href="#")
                 // Product Description
                 .product-description
-                  span topshop
+                  span ギフト・手紙
                   a(href="/goods/P1001/index.html")
-                    h6 Knot Front Mini Dress
-                  p.product-price $80.00
+                    h6 活版印刷レターセット
+                  p.product-price ¥5,600
                   // Hover Content
                   .hover-content
                     // Add to Cart
                     .add-to-cart-btn
-                      a.btn.essence-btn(href="#") Add to Cart
+                      a.btn.essence-btn(href="#") カートに追加
             // Single Product
             .col-12.col-sm-6.col-lg-4
               .single-product-wrapper
                 // Product Image
                 .product-img
-                  img(src="/img/product-img/product-8.jpg", alt="")
+                  img(src="/img/product-img/notepad.png", alt="")
                   // Hover Thumb
-                  img.hover-img(src="/img/product-img/product-9.jpg", alt="")
+                  img.hover-img(src="/img/product-img/notepad.png", alt="")
                   // Favourite
                   .product-favourite
                     a.favme.fa.fa-heart(href="#")
                 // Product Description
                 .product-description
-                  span topshop
+                  span デスク周り
                   a(href="/goods/P1001/index.html")
-                    h6 Knot Front Mini Dress
-                  p.product-price $80.00
+                    h6 本革デスクマット
+                  p.product-price ¥51,200
                   // Hover Content
                   .hover-content
                     // Add to Cart
                     .add-to-cart-btn
-                      a.btn.essence-btn(href="#") Add to Cart
+                      a.btn.essence-btn(href="#") カートに追加
             // Single Product
             .col-12.col-sm-6.col-lg-4
               .single-product-wrapper
                 // Product Image
                 .product-img
-                  img(src="/img/product-img/product-9.jpg", alt="")
+                  img(src="/img/product-img/pen.png", alt="")
                   // Hover Thumb
-                  img.hover-img(src="/img/product-img/product-1.jpg", alt="")
+                  img.hover-img(src="/img/product-img/pen.png", alt="")
                   // Favourite
                   .product-favourite
                     a.favme.fa.fa-heart(href="#")
                 // Product Description
                 .product-description
-                  span topshop
+                  span インク・消耗品
                   a(href="/goods/P1001/index.html")
-                    h6 Knot Front Mini Dress
-                  p.product-price $80.00
+                    h6 ボトルインク - 琥珀
+                  p.product-price ¥4,000
                   // Hover Content
                   .hover-content
                     // Add to Cart
                     .add-to-cart-btn
-                      a.btn.essence-btn(href="#") Add to Cart
+                      a.btn.essence-btn(href="#") カートに追加
         // Pagination
         nav(aria-label="navigation")
           ul.pagination.mt-50.mb-70

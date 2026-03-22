@@ -1,19 +1,24 @@
 extends ../../layout/_baseof
 
 block load_scripts
-  script(src="../../main.ts" type="module")
+  script(src="/main.ts" type="module")
 
 block content
   // ##### Breadcumb Area Start #####
-  div(class="breadcumb_area bg-img", style="background-image: url(/img/bg-img/breadcumb.jpg);")
+  div(class="breadcumb_area bg-img", style="background-image: url(/img/bg-img/breadcumb.png);")
     .container.h-100
       .row.h-100.align-items-center
         .col-12
           .page-title.text-center
-            h2 About This Site
+            h2 このサイトについて
   // ##### Breadcumb Area End #####
 
   // ##### About This Site Area Start #####
   div(class="section-padding-80")
     .container
+      h3 書く喜びを、すべての人に。
+      p.mt-30 当サイトは、世界中から厳選した筆記具やレザーアイテムを取り揃えた、大人のための文房具専門店です。
+      p 熟練の職人が作る万年筆や、使い込むほどに味わいが増す栃木レザーのペンケースなど、一生モノとして愛用いただける逸品を厳選しました。
+      p 私たちは、デジタル化が進む現代だからこそ、ペンを握り、紙に想いを綴る時間の豊かさを大切にしたいと考えています。
+      p あなたの手に馴染み、人生の物語を共に紡いでいくパートナーとの出会いを、心よりお手伝いいたします。
   // ##### About This Site Area End #####
